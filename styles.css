@@ -14,6 +14,28 @@ body {
   box-shadow: 0 0 12px rgba(128, 0, 128, 0.1);
 }
 
+.container {
+  position: relative; /* Adiciona posicionamento relativo para que o botão possa ser posicionado absolutamente dentro dele */
+}
+
+.save-button {
+  position: absolute;
+  top: 20px; /* Ajuste conforme a necessidade de espaçamento do topo */
+  right: 20px; /* Ajuste conforme a necessidade de espaçamento da direita */
+  padding: 10px 15px;
+  background-color: #6a0dad; /* Cor de fundo roxa */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 10; /* Garante que o botão fique acima de outros elementos */
+}
+
+.save-button:hover {
+  background-color: #5a009a; /* Um tom mais escuro ao passar o mouse */
+}
+
 h1, h2, h3 {
   text-align: center;
   color: #6a0dad;
