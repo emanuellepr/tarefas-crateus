@@ -12,10 +12,7 @@ body {
   border-radius: 8px;
   padding: 25px;
   box-shadow: 0 0 12px rgba(128, 0, 128, 0.1);
-}
-
-.container {
-  position: relative; /* Adiciona posicionamento relativo para que o botão possa ser posicionado absolutamente dentro dele */
+  position: relative;
 }
 
 .save-button {
