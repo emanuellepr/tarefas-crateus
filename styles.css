@@ -1,0 +1,81 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f0fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 0 12px rgba(128, 0, 128, 0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #6a0dad;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 14px;
+  margin: 5px;
+  border: none;
+  background-color: #c9a0dc;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #9b59b6;
+}
+
+.month-content {
+  display: none;
+}
+
+.month-content.active {
+  display: block;
+}
+
+.info {
+  background-color: #f3e8fc;
+  padding: 10px;
+  border-left: 5px solid #9b59b6;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+th, td {
+  border: 1px solid #d9b3ff;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #9b59b6;
+  color: white;
+}
+
+td input[type="checkbox"] {
+  margin-left: 8px;
+  transform: scale(1.2);
+  cursor: pointer;
+}

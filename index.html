@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendário de Tarefas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calendário de Tarefas da República</h1>
+
+    <div class="tabs">
+      <button class="tab active" onclick="showMonth(event, 'jan')">Janeiro</button>
+      <button class="tab" onclick="showMonth(event, 'fev')">Fevereiro</button>
+      <button class="tab" onclick="showMonth(event, 'mar')">Março</button>
+      <button class="tab" onclick="showMonth(event, 'abr')">Abril</button>
+      <button class="tab" onclick="showMonth(event, 'mai')">Maio</button>
+      <button class="tab" onclick="showMonth(event, 'jun')">Junho</button>
+      <button class="tab" onclick="showMonth(event, 'jul')">Julho</button>
+      <button class="tab" onclick="showMonth(event, 'ago')">Agosto</button>
+      <button class="tab" onclick="showMonth(event, 'set')">Setembro</button>
+      <button class="tab" onclick="showMonth(event, 'out')">Outubro</button>
+      <button class="tab" onclick="showMonth(event, 'nov')">Novembro</button>
+      <button class="tab" onclick="showMonth(event, 'dez')">Dezembro</button>
+    </div>
+
+    <div id="months">
+      <!-- Mês base: modelo para todos -->
+      <!-- Janeiro -->
+      <div class="month-content active" id="jan">
+        <h2>Janeiro</h2>
+        <p class="info">Qualquer mudança deve ser notificada no grupo.</p>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Lavar Banheiros</h3>
+        <p class="info">Lembrando que quem lavar o banheiro deve lavar suas respectivas áreas.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Semana 1</th>
+              <th>Semana 2</th>
+              <th>Semana 3</th>
+              <th>Semana 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alexandra <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+              <td>Eduarda <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="month-content" id="fev">
+  <h2>Fevereiro</h2>
+  <p class="info">Qualquer mudança deve ser notificada no grupo.</p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Varrer</td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Passar Pano</td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td></td>
+        <td>Alexandra <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+  <h3>Lavar Banheiros</h3>
+  <p class="info">Lembrando que quem lavar o banheiro deve lavar suas respectivas áreas.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Semana 1</th>
+        <th>Semana 2</th>
+        <th>Semana 3</th>
+        <th>Semana 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alexandra <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="month-content" id="mar">
+  <h2>Março</h2>
+  <p class="info">Qualquer mudança deve ser notificada no grupo.</p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Varrer</td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Passar Pano</td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td></td>
+        <td>Alexandra <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+  <h3>Lavar Banheiros</h3>
+  <p class="info">Lembrando que quem lavar o banheiro deve lavar suas respectivas áreas.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Semana 1</th>
+        <th>Semana 2</th>
+        <th>Semana 3</th>
+        <th>Semana 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alexandra <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="month-content" id="abr">
+  <h2>Abril</h2>
+  <p class="info">Qualquer mudança deve ser notificada no grupo.</p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Varrer</td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Passar Pano</td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td></td>
+        <td>Alexandra <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+  <h3>Lavar Banheiros</h3>
+  <p class="info">Lembrando que quem lavar o banheiro deve lavar suas respectivas áreas.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Semana 1</th>
+        <th>Semana 2</th>
+        <th>Semana 3</th>
+        <th>Semana 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alexandra <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="month-content" id="mai">
+  <h2>Maio</h2>
+  <p class="info">Qualquer mudança deve ser notificada no grupo.</p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Varrer</td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Passar Pano</td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td></td>
+        <td>Alexandra <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+  <h3>Lavar Banheiros</h3>
+  <p class="info">Lembrando que quem lavar o banheiro deve lavar suas respectivas áreas.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Semana 1</th>
+        <th>Semana 2</th>
+        <th>Semana 3</th>
+        <th>Semana 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alexandra <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="month-content" id="jun">
+  <h2>Junho</h2>
+  <p class="info">Qualquer mudança deve ser notificada no grupo.</p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Varrer</td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Passar Pano</td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td></td>
+        <td>Alexandra <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+  <h3>Lavar Banheiros</h3>
+  <p class="info">Lembrando que quem lavar o banheiro deve lavar suas respectivas áreas.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Semana 1</th>
+        <th>Semana 2</th>
+        <th>Semana 3</th>
+        <th>Semana 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alexandra <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="month-content" id="jul">
+  <h2>Julho</h2>
+  <p class="info">Qualquer mudança deve ser notificada no grupo.</p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Varrer</td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Passar Pano</td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td></td>
+        <td>Alexandra <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+  <h3>Lavar Banheiros</h3>
+  <p class="info">Lembrando que quem lavar o banheiro deve lavar suas respectivas áreas.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Semana 1</th>
+        <th>Semana 2</th>
+        <th>Semana 3</th>
+        <th>Semana 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alexandra <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="month-content" id="ago">
+  <h2>Agosto</h2>
+  <p class="info">Qualquer mudança deve ser notificada no grupo.</p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Varrer</td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Passar Pano</td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td></td>
+        <td>Alexandra <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+  <h3>Lavar Banheiros</h3>
+  <p class="info">Lembrando que quem lavar o banheiro deve lavar suas respectivas áreas.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Semana 1</th>
+        <th>Semana 2</th>
+        <th>Semana 3</th>
+        <th>Semana 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alexandra <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="month-content" id="set">
+  <h2>Setembro</h2>
+  <p class="info">Qualquer mudança deve ser notificada no grupo.</p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Varrer</td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Passar Pano</td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td></td>
+        <td>Alexandra <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Lavar Banheiros</h3>
+  <p class="info">Lembrando que quem lavar o banheiro deve lavar suas respectivas áreas.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Semana 1</th>
+        <th>Semana 2</th>
+        <th>Semana 3</th>
+        <th>Semana 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alexandra <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="month-content" id="out">
+  <h2>Outubro</h2>
+  <p class="info">Qualquer mudança deve ser notificada no grupo.</p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Varrer</td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Passar Pano</td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td></td>
+        <td>Alexandra <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+  <h3>Lavar Banheiros</h3>
+  <p class="info">Lembrando que quem lavar o banheiro deve lavar suas respectivas áreas.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Semana 1</th>
+        <th>Semana 2</th>
+        <th>Semana 3</th>
+        <th>Semana 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alexandra <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="month-content" id="nov">
+  <h2>Novembro</h2>
+  <p class="info">Qualquer mudança deve ser notificada no grupo.</p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Varrer</td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Passar Pano</td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td></td>
+        <td>Alexandra <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+  <h3>Lavar Banheiros</h3>
+  <p class="info">Lembrando que quem lavar o banheiro deve lavar suas respectivas áreas.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Semana 1</th>
+        <th>Semana 2</th>
+        <th>Semana 3</th>
+        <th>Semana 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alexandra <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="month-content" id="dez">
+  <h2>Dezembro</h2>
+  <p class="info">Qualquer mudança deve ser notificada no grupo.</p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Varrer</td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Passar Pano</td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td></td>
+        <td>Cristiane <input type="checkbox" /></td>
+        <td></td>
+        <td>Alexandra <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Varrer</td>
+              <td>Dandara <input type="checkbox" /></td>
+              <td>Alisson <input type="checkbox" /></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td>Emanuelle <input type="checkbox" /></td>
+              <td>Mirelly <input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Passar Pano</td>
+              <td>Eduarda <input type="checkbox" /></td>
+              <td></td>
+              <td>Cristiane <input type="checkbox" /></td>
+              <td></td>
+              <td>Alexandra <input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+  <h3>Lavar Banheiros</h3>
+  <p class="info">Lembrando que quem lavar o banheiro deve lavar suas respectivas áreas.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Semana 1</th>
+        <th>Semana 2</th>
+        <th>Semana 3</th>
+        <th>Semana 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Emanuelle <input type="checkbox" /></td>
+        <td>Dandara <input type="checkbox" /></td>
+        <td>Alexandra <input type="checkbox" /></td>
+        <td>Cristiane <input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>Alisson <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+        <td>Mirelly <input type="checkbox" /></td>
+        <td>Eduarda <input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    </div> <!-- Fecha #months -->
+  </div> <!-- Fecha .container -->
+
+  <script src="script.js"></script>
+</body>
+</html>
